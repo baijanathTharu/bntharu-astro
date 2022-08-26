@@ -23,7 +23,7 @@ const {
 	<BaseHead title={title} description={description} />
 	<Header />
 	<main class="px-4">
-		<article class="markdown-body">
+		<article class="prose max-w-none">
 			{heroImage && <img width="100%" height="100%" src={heroImage} alt="" />}
 			<h1 class="title">{title}</h1>
 			{pubDate && <time>{pubDate}</time>}
