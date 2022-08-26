@@ -24,7 +24,7 @@ const posts = (await Astro.glob("./blog/**/*.{md,mdx}"))
 			<ul>
 				{
 					posts.map((post) => (
-						<li>
+						<li class="my-2 text-xl">
 							<time datetime={post.frontmatter.pubDate}>
 								{new Date(post.frontmatter.pubDate).toLocaleDateString(
 									"en-us",
@@ -35,7 +35,12 @@ const posts = (await Astro.glob("./blog/**/*.{md,mdx}"))
 									}
 								)}
 							</time>
-							<a href={post.url}>{post.frontmatter.title}</a>
+							<a
+								class="underline text-primary hover:text-success"
+								href={post.url}
+							>
+								{post.frontmatter.title}
+							</a>
 						</li>
 					))
 				}
