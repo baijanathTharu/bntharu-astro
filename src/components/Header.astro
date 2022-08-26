@@ -25,6 +25,12 @@ import SocialLinks from "./SocialLinks.astro";
 				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 			>
 				<li><a class="text-2xl font-semibold" href="/blog">Blog</a></li>
+				<li>
+					<a
+						class="hover:text-primary text-2xl font-semibold hover:bg-transparent"
+						href="/blog/resources">Resources</a
+					>
+				</li>
 				<SocialLinks />
 			</ul>
 		</div>
@@ -41,6 +47,12 @@ import SocialLinks from "./SocialLinks.astro";
 						Astro.url.pathname === "/blog" ? "text-primary underline" : ""
 					}`}
 					href="/blog">Blog</a
+				>
+			</li>
+			<li>
+				<a
+					class="hover:text-primary text-xl font-semibold hover:bg-transparent"
+					href="/blog/resources">Resources</a
 				>
 			</li>
 		</ul>
