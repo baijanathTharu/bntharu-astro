@@ -3,18 +3,16 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, World</h1>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+	<Header title={SITE_TITLE} />
+	<main>
+		<h1>🧑‍🚀 Hello, World</h1>
+		<button class="btn">Button</button>
+	</main>
+	<Footer />
+</BaseLayout>
