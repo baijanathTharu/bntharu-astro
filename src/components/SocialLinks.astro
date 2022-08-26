@@ -1,0 +1,38 @@
+---
+import { SOCIAL_LINKS } from "../config";
+
+const { github, linkedin, twitter } = SOCIAL_LINKS;
+---
+
+<ul class="flex gap-3">
+  <li>
+    <a class="hover:text-primary" target="_blank" href={github}>
+      <img
+        width="32px"
+        height="32px"
+        src="/icons/github.svg"
+        alt="github profile link"
+      />
+    </a>
+  </li>
+  <li>
+    <a class="hover:text-primary" target="_blank" href={twitter}>
+      <img
+        width="32px"
+        height="32px"
+        src="/icons/twitter.svg"
+        alt="twitter profile link"
+      />
+    </a>
+  </li>
+  <li>
+    <a class="hover:text-primary" target="_blank" href={linkedin}>
+      <img
+        width="32px"
+        height="32px"
+        src="/icons/linkedin.svg"
+        alt="linkedin profile link"
+      />
+    </a>
+  </li>
+</ul>
