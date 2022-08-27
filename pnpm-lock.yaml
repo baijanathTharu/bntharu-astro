@@ -8,6 +8,8 @@ specifiers:
   '@tailwindcss/typography': ^0.5.4
   astro: ^1.0.9
   daisyui: ^2.24.0
+  mdast-util-to-string: ^3.1.0
+  reading-time: ^1.5.0
   rehype-slug: ^5.0.1
   remark-gfm: ^3.0.1
   remark-smartypants: ^2.0.0
@@ -15,6 +17,8 @@ specifiers:
 dependencies:
   '@tailwindcss/typography': 0.5.4
   daisyui: 2.24.0
+  mdast-util-to-string: 3.1.0
+  reading-time: 1.5.0
 
 devDependencies:
   '@astrojs/mdx': 0.10.1
@@ -2215,7 +2219,6 @@ packages:
 
   /mdast-util-to-string/3.1.0:
     resolution: {integrity: sha512-n4Vypz/DZgwo0iMHLQL49dJzlp7YtAJP+N07MZHpjPf/5XJuHUWstviF4Mn2jEiR/GNmtnRRqnwsXExk3igfFA==}
-    dev: true
 
   /mdurl/1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
@@ -2930,6 +2933,10 @@ packages:
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.1
+
+  /reading-time/1.5.0:
+    resolution: {integrity: sha512-onYyVhBNr4CmAxFsKS7bz+uTLRakypIe4R+5A824vBSkQy/hB3fZepoVEf8OVAxzLvK+H/jm9TzpI3ETSm64Kg==}
+    dev: false
 
   /recast/0.20.5:
     resolution: {integrity: sha512-E5qICoPoNL4yU0H0NoBDntNB0Q5oMSNh9usFctYniLBluTthi3RsQVBXIJNbApOlvSwW/RGxIuokPcAc59J5fQ==}

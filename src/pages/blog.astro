@@ -24,23 +24,27 @@ const posts = (await Astro.glob("./blog/**/*.{md,mdx}"))
 			<ul>
 				{
 					posts.map((post) => (
-						<li class="my-2 text-xl">
-							<time datetime={post.frontmatter.pubDate}>
-								{new Date(post.frontmatter.pubDate).toLocaleDateString(
-									"en-us",
-									{
-										year: "numeric",
-										month: "short",
-										day: "numeric",
-									}
-								)}
-							</time>
-							<a
-								class="underline text-primary hover:text-success"
-								href={post.url}
-							>
-								{post.frontmatter.title}
-							</a>
+						<li class="my-4 text-xl">
+							<div class="flex flex-col">
+								<a class="underline hover:text-success" href={post.url}>
+									{post.frontmatter.title}
+								</a>
+								<div class="text-xs font-semibold">
+									<time datetime={post.frontmatter.pubDate}>
+										{new Date(post.frontmatter.pubDate).toLocaleDateString(
+											"en-us",
+											{
+												year: "numeric",
+												month: "short",
+												day: "numeric",
+											}
+										)}
+									</time>
+									<span class="text-gray-900">
+										({post.frontmatter.minutesRead})
+									</span>
+								</div>
+							</div>
 						</li>
 					))
 				}
