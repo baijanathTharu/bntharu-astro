@@ -129,3 +129,5 @@ isPublished: true
 - [Adding Circuit Breakers to Node.Js APIs](https://selvaganesh93.medium.com/adding-circuit-breakers-to-nodejs-apis-8c980d3e96c4)
 
 - [How Redis Can Make Authentication 10x Easier For Your Users](https://javascript.plainenglish.io/how-redis-can-make-authentication-10x-easoer-for-your-users-cd8c0601d38)
+
+- [Hexagonal Architecture from the Ground Up](https://levelup.gitconnected.com/hexagonal-architecture-from-the-ground-up-28f2a1097063) 
