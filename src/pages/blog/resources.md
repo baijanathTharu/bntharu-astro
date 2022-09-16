@@ -130,4 +130,6 @@ isPublished: true
 
 - [How Redis Can Make Authentication 10x Easier For Your Users](https://javascript.plainenglish.io/how-redis-can-make-authentication-10x-easoer-for-your-users-cd8c0601d38)
 
-- [Hexagonal Architecture from the Ground Up](https://levelup.gitconnected.com/hexagonal-architecture-from-the-ground-up-28f2a1097063) 
+- [Hexagonal Architecture from the Ground Up](https://levelup.gitconnected.com/hexagonal-architecture-from-the-ground-up-28f2a1097063)
+
+- [Build Decoupled React Components with Inversion of Control](https://blog.bitsrc.io/inversion-of-control-with-react-584533e49245)  
