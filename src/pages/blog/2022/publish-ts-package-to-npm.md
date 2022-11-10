@@ -8,10 +8,16 @@ isPublished: true
 ---
 
 In this blog we are going to make a [`sum`](https://www.npmjs.com/package/@baijanaththaru/ts-sum) package.
-1. Initialize a npm project
+1. Initialize a npm project and a git and github repo
 ```bash
 npm init
 ```
+* content of .gitignore file
+```
+node_modules
+/lib
+```
+
 2. Answer all the following questions shown in the image.
 ![image](https://user-images.githubusercontent.com/60652366/201106199-0a99a364-6795-4f8e-9b25-30e6b701fb6b.png)
 
