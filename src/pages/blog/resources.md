@@ -132,4 +132,6 @@ isPublished: true
 
 - [Hexagonal Architecture from the Ground Up](https://levelup.gitconnected.com/hexagonal-architecture-from-the-ground-up-28f2a1097063)
 
-- [Build Decoupled React Components with Inversion of Control](https://blog.bitsrc.io/inversion-of-control-with-react-584533e49245)  
+- [Build Decoupled React Components with Inversion of Control](https://blog.bitsrc.io/inversion-of-control-with-react-584533e49245)
+
+- [How does NodeJS handle multiple requests?](https://medium.com/@kumuthini.program/how-does-nodejs-handle-multiple-requests-97a2b094e762)  
