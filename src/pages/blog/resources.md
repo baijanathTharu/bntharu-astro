@@ -136,4 +136,6 @@ isPublished: true
 
 - [How does NodeJS handle multiple requests?](https://medium.com/@kumuthini.program/how-does-nodejs-handle-multiple-requests-97a2b094e762)
 
-- [“Wouldn’t it be cool…” and other bad design approaches - Billy Hollis - NDC Oslo 2022](https://www.youtube.com/watch?v=o4mVlUY-TvI&ab_channel=NDCConferences)   
+- [“Wouldn’t it be cool…” and other bad design approaches - Billy Hollis - NDC Oslo 2022](https://www.youtube.com/watch?v=o4mVlUY-TvI&ab_channel=NDCConferences)
+
+- [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/#introduction) 
