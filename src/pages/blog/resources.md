@@ -140,4 +140,6 @@ isPublished: true
 
 - [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/#introduction) 
 
-- [Caching things every Programmer must know](https://medium.com/javarevisited/caching-things-every-programmer-must-know-28d4a7e8b9b1) 
+- [Caching things every Programmer must know](https://medium.com/javarevisited/caching-things-every-programmer-must-know-28d4a7e8b9b1)
+
+- [Improve how you architect webapps](https://www.patterns.dev/)  
