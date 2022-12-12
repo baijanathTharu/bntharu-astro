@@ -143,3 +143,5 @@ isPublished: true
 - [Caching things every Programmer must know](https://medium.com/javarevisited/caching-things-every-programmer-must-know-28d4a7e8b9b1)
 
 - [Improve how you architect webapps](https://www.patterns.dev/)  
+
+- [This Programming Principle will Reduce if/else Statements](https://blog.bitsrc.io/reduce-if-else-switch-usage-with-this-programming-principle-8756358365cd) 
