@@ -145,3 +145,5 @@ isPublished: true
 - [Improve how you architect webapps](https://www.patterns.dev/)  
 
 - [This Programming Principle will Reduce if/else Statements](https://blog.bitsrc.io/reduce-if-else-switch-usage-with-this-programming-principle-8756358365cd) 
+
+- [JavaScript Async/Await Tutorial – Learn Callbacks, Promises, and Async/Await in JS by Making Ice Cream](https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/) 
