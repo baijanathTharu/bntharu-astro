@@ -149,3 +149,5 @@ isPublished: true
 - [JavaScript Async/Await Tutorial – Learn Callbacks, Promises, and Async/Await in JS by Making Ice Cream](https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/)
 
 - [Feature Toggles (aka Feature Flags)](https://martinfowler.com/articles/feature-toggles.html) 
+
+- [The Ultimate Guide to Testing with Prisma: CI Pipelines](https://www.prisma.io/blog/testing-series-5-xWogenROXm) 
