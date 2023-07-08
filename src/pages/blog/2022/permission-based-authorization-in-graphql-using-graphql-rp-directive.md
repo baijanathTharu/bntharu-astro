@@ -2,7 +2,7 @@
 layout: '../../../layouts/BlogPost.astro'
 title: 'Permission Based Authorization in Graphql using @baijanstack/graphql-rp-directive'
 description: 'This post shows the difference between synchronous and asynchronous code.'
-pubDate: 'July 08 2022'
+pubDate: 'July 08 2023'
 heroImage: '/code.jpg'
 isPublished: true
 ---
