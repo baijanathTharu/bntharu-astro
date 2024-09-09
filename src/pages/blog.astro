@@ -7,49 +7,51 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob("./blog/**/*.{md,mdx}"))
-	.filter((post) => !!post.frontmatter.isPublished)
-	.sort(
-		(a, b) =>
-			new Date(b.frontmatter.pubDate).valueOf() -
-			new Date(a.frontmatter.pubDate).valueOf()
-	);
+  .filter((post) => !!post.frontmatter.isPublished)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
+  );
 ---
 
 <BaseLayout>
-	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 
-	<Header />
-	<main class="px-4">
-		<content>
-			<ul>
-				{
-					posts.map((post) => (
-						<li class="my-4 text-xl">
-							<div class="flex flex-col">
-								<a class="underline hover:text-blue-400" href={post.url}>
-									{post.frontmatter.title}
-								</a>
-								<div class="text-xs font-semibold">
-									<time datetime={post.frontmatter.pubDate}>
-										{new Date(post.frontmatter.pubDate).toLocaleDateString(
-											"en-us",
-											{
-												year: "numeric",
-												month: "short",
-												day: "numeric",
-											}
-										)}
-									</time>
-									<span class="text-gray-900">
-										({post.frontmatter.minutesRead})
-									</span>
-								</div>
-							</div>
-						</li>
-					))
-				}
-			</ul>
-		</content>
-		<Footer />
-	</main>
+  <Header />
+  <main class="px-4">
+    <content>
+      <ul class="mx-auto flex flex-wrap justify-center gap-4">
+        {
+          posts.map((post) => (
+            <a
+              class="bg-slate-100 w-52 my-4 rounded-sm text-xl p-8 shadow-lg hover:shadow-2xl hover:text-orange-500"
+              href={post.url}
+            >
+              <li class="">
+                <div class="flex flex-col">
+                  {`${post.frontmatter.title.slice(0, 60)}...`}
+                  <div class="pt-2 text-xs font-semibold">
+                    <time datetime={post.frontmatter.pubDate}>
+                      {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                        "en-us",
+                        {
+                          year: "numeric",
+                          month: "short",
+                          day: "numeric",
+                        }
+                      )}
+                    </time>
+                    <span class="">({post.frontmatter.minutesRead})</span>
+                  </div>
+                </div>
+              </li>
+            </a>
+          ))
+        }
+      </ul>
+    </content>
+
+    <Footer />
+  </main>
 </BaseLayout>

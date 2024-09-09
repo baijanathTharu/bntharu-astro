@@ -4,6 +4,14 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const posts = (await Astro.glob("./blog/**/*.{md,mdx}"))
+  .filter((post) => !!post.frontmatter.isPublished)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
+  );
 ---
 
 <BaseLayout>
@@ -11,21 +19,40 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   <Header title={SITE_TITLE} />
   <main class="px-4">
-    <div class="py-4">
-      <h1 class="flex justify-center items-center">Hi, I'm Baijanath Tharu</h1>
-      <h3 class="flex justify-center items-center">
-        A software developer from Nepal
-      </h3>
-
-      <div class="my-4 flex justify-center items-center">
-        <a href="https://twitter.com/baijanaththaru" target="blank"
-          ><img
-            src="https://img.shields.io/twitter/follow/baijanaththaru?logo=twitter&style=for-the-badge"
-            alt="baijanaththaru"
-          />
-        </a>
-      </div>
-    </div>
+    <content>
+      <ul class="mx-auto flex flex-wrap justify-center md:gap-4">
+        {
+          posts.map((post) => (
+            <a
+              class="bg-slate-100 w-full  md:w-52 my-4 rounded-lg text-xl p-8 shadow-lg hover:shadow-2xl hover:text-orange-500"
+              href={post.url}
+            >
+              <li class="">
+                <div class="flex flex-col">
+                  <h2 class="text-sm font-semibold text-wrap break-words">{`${post.frontmatter.title.slice(
+                    0,
+                    60
+                  )}...`}</h2>
+                  <div class="pt-2 text-xs font-semibold">
+                    <time datetime={post.frontmatter.pubDate}>
+                      {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                        "en-us",
+                        {
+                          year: "numeric",
+                          month: "short",
+                          day: "numeric",
+                        }
+                      )}
+                    </time>
+                    <span class="">({post.frontmatter.minutesRead})</span>
+                  </div>
+                </div>
+              </li>
+            </a>
+          ))
+        }
+      </ul>
+    </content>
   </main>
   <Footer />
 </BaseLayout>

@@ -1,9 +1,9 @@
 ---
-layout: '../../../layouts/BlogPost.astro'
-title: 'Permission Based Authorization in Graphql using @baijanstack/graphql-rp-directive'
-description: 'This post shows the difference between synchronous and asynchronous code.'
-pubDate: 'July 08 2023'
-heroImage: '/code.jpg'
+layout: "../../../layouts/BlogPost.astro"
+title: "Permission Based Authorization in Graphql using graphql-rp-directive"
+description: "This post shows the difference between synchronous and asynchronous code."
+pubDate: "July 08 2023"
+heroImage: "/code.jpg"
 isPublished: true
 ---
 
@@ -32,14 +32,22 @@ const typedefs = gql`
 3. Create your role and permission data.
 
 ```ts
-import { getAuthorizedSchema, TRolePermission } from '@baijanstack/graphql-rp-directive';
+import {
+  getAuthorizedSchema,
+  TRolePermission,
+} from "@baijanstack/graphql-rp-directive";
 
 const rolePermissionsData: TRolePermission = {
   ADMIN: {
-    permissions: ['READ_SECURE_DATA', 'READ_RESTRICTED_FIELD', 'READ_MUTATION_RESPONSE', 'CREATE_FIELD'],
+    permissions: [
+      "READ_SECURE_DATA",
+      "READ_RESTRICTED_FIELD",
+      "READ_MUTATION_RESPONSE",
+      "CREATE_FIELD",
+    ],
   },
   PUBLIC: {
-    permissions: ['READ_MUTATION_RESPONSE'],
+    permissions: ["READ_MUTATION_RESPONSE"],
   },
 };
 ```
@@ -72,7 +80,7 @@ const server = new ApolloServer<{
   schema: schemaWithPermissionDirective,
   context: {
     user: {
-      roles: ['PUBLIC'],
+      roles: ["PUBLIC"],
     },
   },
 });

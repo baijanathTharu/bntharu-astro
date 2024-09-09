@@ -24,7 +24,6 @@ import SocialLinks from "./SocialLinks.astro";
         tabindex="0"
         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
       >
-        <li><a class="text-2xl font-semibold" href="/blog">Blog</a></li>
         <li>
           <a
             class="hover:text-primary text-2xl font-semibold hover:bg-transparent"
@@ -36,28 +35,29 @@ import SocialLinks from "./SocialLinks.astro";
     </div>
     <a href="/" class="hover:text-primary mx-4">
       <h1 class="normal-case text-2xl font-bold w-full">{SITE_TITLE}</h1>
+      <span class="text-sm italic">A Software Developer</span>
     </a>
   </div>
   <!-- desktop menu -->
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal p-0">
-      <li>
-        <a
-          class={`hover:text-primary text-xl font-semibold hover:bg-transparent ${
-            Astro.url.pathname === "/blog" ? "text-primary underline" : ""
-          }`}
-          href="/blog">Blog</a
-        >
-      </li>
-      <li>
-        <a
-          class="hover:text-primary text-xl font-semibold hover:bg-transparent"
-          href="/blog/resources">Resources</a
-        >
-      </li>
-    </ul>
-  </div>
   <div class="navbar-end hidden md:flex">
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal p-0">
+        <!-- <li>
+          <a
+            class={`hover:text-primary text-xl font-semibold hover:bg-transparent ${
+              Astro.url.pathname === "/blog" ? "text-primary underline" : ""
+            }`}
+            href="/blog">Blog</a
+          >
+        </li> -->
+        <li>
+          <a
+            class="hover:text-primary text-xl font-semibold hover:bg-transparent"
+            href="/blog/resources">Resources</a
+          >
+        </li>
+      </ul>
+    </div>
     <SocialLinks />
   </div>
 </div>
