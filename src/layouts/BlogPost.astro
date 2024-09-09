@@ -5,40 +5,40 @@ import Footer from "../components/Footer.astro";
 import BaseLayout from "./BaseLayout.astro";
 
 export interface Props {
-	content: {
-		title: string;
-		description: string;
-		pubDate?: string;
-		updatedDate?: string;
-		heroImage?: string;
-		minutesRead?: string;
-	};
+  content: {
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+    heroImage?: string;
+    minutesRead?: string;
+  };
 }
 
 const {
-	content: { title, description, pubDate, updatedDate, heroImage, minutesRead },
+  content: { title, description, pubDate, updatedDate, heroImage, minutesRead },
 } = Astro.props as Props;
 ---
 
 <BaseLayout>
-	<BaseHead title={title} description={description} />
-	<Header />
-	<main class="px-4">
-		<article class="prose max-w-none">
-			{heroImage && <img width="100%" height="100%" src={heroImage} alt="" />}
-			<h1 class="title">{title}</h1>
-			{pubDate && <time>{pubDate}</time>}
-			({minutesRead})
-			{
-				updatedDate && (
-					<div>
-						Last updated on <time>{updatedDate}</time>
-					</div>
-				)
-			}
-			<hr />
-			<slot />
-		</article>
-	</main>
-	<Footer />
+  <BaseHead title={title} description={description} />
+  <Header />
+  <main class="px-4">
+    <article class="mt-4 prose max-w-none">
+      <!-- {heroImage && <img width="100%" height="100%" src={heroImage} alt="" />} -->
+      <h1 class="title">{title}</h1>
+      {pubDate && <time>{pubDate}</time>}
+      ({minutesRead})
+      {
+        updatedDate && (
+          <div>
+            Last updated on <time>{updatedDate}</time>
+          </div>
+        )
+      }
+      <hr />
+      <slot />
+    </article>
+  </main>
+  <Footer />
 </BaseLayout>
