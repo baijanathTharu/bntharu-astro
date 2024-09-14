@@ -20,6 +20,7 @@
     "remark-smartypants": "^2.0.0"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.1.2",
     "@tailwindcss/typography": "^0.5.4",
     "daisyui": "^2.24.0",
     "mdast-util-to-string": "^3.1.0",
