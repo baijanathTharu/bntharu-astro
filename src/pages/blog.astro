@@ -25,7 +25,7 @@ const posts = (await Astro.glob("./blog/**/*.{md,mdx}"))
         {
           posts.map((post) => (
             <a
-              class="bg-slate-100 w-52 my-4 rounded-sm text-xl p-8 shadow-lg hover:shadow-2xl hover:text-orange-500"
+              class="bg-slate-100 w-52 my-4 rounded-sm text-xl p-8 shadow-lg hover:shadow-2xl hover:text-primary"
               href={post.url}
             >
               <li class="">

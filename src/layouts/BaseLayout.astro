@@ -1,10 +1,48 @@
 ---
-const theme = "halloween";
+const theme = "night";
+
+const themes = [
+  "light",
+  "dark",
+  "cupcake",
+  "bumblebee",
+  "emerald",
+  "corporate",
+  "synthwave",
+  "retro",
+  "cyberpunk",
+  "valentine",
+  "halloween",
+  "garden",
+  "forest",
+  "aqua",
+  "lofi",
+  "pastel",
+  "fantasy",
+  "wireframe",
+  "black",
+  "luxury",
+  "dracula",
+  "cmyk",
+  "autumn",
+  "business",
+  "acid",
+  "lemonade",
+  "night",
+  "coffee",
+  "winter",
+];
+
+function getRandomTheme() {
+  return themes[Math.floor(Math.random() * themes.length)];
+}
+
+// const theme = getRandomTheme();
 ---
 
 <!DOCTYPE html>
 <html lang="en-us" data-theme={theme}>
-  <div class="max-w-5xl mx-auto">
+  <div class="max-w-2xl mx-auto">
     <slot />
   </div>
 

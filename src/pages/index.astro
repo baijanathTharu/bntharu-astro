@@ -20,20 +20,19 @@ const posts = (await Astro.glob("./blog/**/*.{md,mdx}"))
   <Header title={SITE_TITLE} />
   <main class="px-4">
     <content>
-      <ul class="mx-auto flex flex-wrap justify-center md:gap-4">
+      <ul class="mx-auto justify-center md:gap-4">
         {
           posts.map((post) => (
             <a
-              class="w-full md:w-52 my-4 rounded-lg text-xl p-8 hover:shadow-2xl hover:text-orange-500"
+              class="w-full rounded-lg text-xl hover:shadow-2xl hover:text-primary"
               href={post.url}
             >
-              <li class="">
+              <li class="border border-gray-700 p-4">
                 <div class="flex flex-col">
-                  <h2 class="text-sm font-semibold text-wrap break-words">{`${post.frontmatter.title.slice(
-                    0,
-                    60
-                  )}...`}</h2>
-                  <div class="pt-2 text-xs font-semibold">
+                  <h2 class="text-lg font-semibold text-wrap break-words">
+                    {post.frontmatter.title}
+                  </h2>
+                  <div class="pt-2 text-xs text-gray-600 font-semibold">
                     <time datetime={post.frontmatter.pubDate}>
                       {new Date(post.frontmatter.pubDate).toLocaleDateString(
                         "en-us",
