@@ -1,0 +1,53 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+  <Header title={SITE_TITLE} />
+  <main class="px-4">
+    <content>
+      <h2 class="py-52 text-center text-2xl text-secondary-focus">
+        Will Add Soon!
+      </h2>
+
+      <!-- <ul class="mx-auto justify-center md:gap-4">
+        {
+          posts.map((post) => (
+            <a
+              class="w-full rounded-lg text-xl hover:shadow-2xl hover:text-primary"
+              href={post.url}
+            >
+              <li class="border border-gray-700 p-4">
+                <div class="flex flex-col">
+                  <h2 class="text-lg font-semibold text-wrap break-words">
+                    {post.frontmatter.title}
+                  </h2>
+                  <div class="pt-2 text-xs text-gray-600 font-semibold">
+                    <time datetime={post.frontmatter.pubDate}>
+                      {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                        "en-us",
+                        {
+                          year: "numeric",
+                          month: "short",
+                          day: "numeric",
+                        }
+                      )}
+                    </time>
+                    <span class="">({post.frontmatter.minutesRead})</span>
+                  </div>
+                </div>
+              </li>
+            </a>
+          ))
+        }
+      </ul> -->
+    </content>
+  </main>
+  <Footer />
+</BaseLayout>
