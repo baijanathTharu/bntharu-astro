@@ -12,41 +12,56 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <Header title={SITE_TITLE} />
   <main class="px-4">
     <content>
-      <h2 class="py-52 text-center text-2xl text-secondary-focus">
-        Will Add Soon!
-      </h2>
-
-      <!-- <ul class="mx-auto justify-center md:gap-4">
-        {
-          posts.map((post) => (
-            <a
-              class="w-full rounded-lg text-xl hover:shadow-2xl hover:text-primary"
-              href={post.url}
-            >
-              <li class="border border-gray-700 p-4">
-                <div class="flex flex-col">
-                  <h2 class="text-lg font-semibold text-wrap break-words">
-                    {post.frontmatter.title}
-                  </h2>
-                  <div class="pt-2 text-xs text-gray-600 font-semibold">
-                    <time datetime={post.frontmatter.pubDate}>
-                      {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                        "en-us",
-                        {
-                          year: "numeric",
-                          month: "short",
-                          day: "numeric",
-                        }
-                      )}
-                    </time>
-                    <span class="">({post.frontmatter.minutesRead})</span>
-                  </div>
+      <div class="container mx-auto py-12 px-4">
+        <div class="grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
+            <!-- Project Card 1 -->
+            <div class="bg-transparent border border-gray-300 rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
+                <div class="p-6">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="rounded-full bg-blue-100 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold">express-auth</h2>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Auth</span>
+                        <span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">ExpressJS</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">A ExpressJS library supporting tokens based auth</p>
+                    <a href="https://www.npmjs.com/package/@baijanstack/express-auth?activeTab=readme" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                        View on npm
+                    </a>
                 </div>
-              </li>
-            </a>
-          ))
-        }
-      </ul> -->
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-transparent border border-gray-300 rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
+                <div class="p-6">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="rounded-full bg-green-100 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold">graphql-rp-directive</h2>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Graphql</span>
+                        <span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">NodeJS</span>
+                        <span class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs">Authorization</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">A library for authorization in Graphql using directives.</p>
+                    <a href="https://www.npmjs.com/package/@baijanstack/graphql-rp-directive" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                        View on npm
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
     </content>
   </main>
   <Footer />
