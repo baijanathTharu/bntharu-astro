@@ -16,7 +16,7 @@
     "@astrojs/tailwind": "^1.0.0",
     "astro": "^1.0.9",
     "rehype-slug": "^5.0.1",
-    "remark-gfm": "^3.0.1",
+    "remark-gfm": "^4.0.1",
     "remark-smartypants": "^2.0.0"
   },
   "dependencies": {

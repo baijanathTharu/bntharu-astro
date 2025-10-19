@@ -4,6 +4,7 @@ import sitemap from "@astrojs/sitemap";
 
 import tailwind from "@astrojs/tailwind";
 import partytown from "@astrojs/partytown";
+import remarkGfm from "remark-gfm";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
 
 // https://astro.build/config
@@ -24,6 +25,6 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [remarkReadingTime],
+    remarkPlugins: [remarkReadingTime, remarkGfm],
   },
 });

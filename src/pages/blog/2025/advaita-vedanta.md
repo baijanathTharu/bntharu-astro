@@ -4,7 +4,7 @@ title: "The Gentle Path: Awareness, Freedom, and Living Fully"
 description: "The Gentle Path: Awareness, Freedom, and Living Fully is a beginner-friendly blog exploring the Self through Advaita Vedanta. Developed with thoughtful guidance, it blends careful insight and structured clarity to make profound concepts accessible and approachable. Through reflections, analogies, and practical exercises, the blog invites readers to rest in the ever-present awareness beyond body, mind, and thought, and to live fully and freely in everyday life."
 pubDate: "Oct 18 2025"
 heroImage: "/code.jpg"
-isPublished: true
+isPublished: false
 ---
 
 The Gentle Path: Awareness, Freedom, and Living Fully is a beginner-friendly blog exploring the Self through Advaita Vedanta. Developed with thoughtful guidance, it blends careful insight and structured clarity to make profound concepts accessible and approachable. Through reflections, analogies, and practical exercises, the blog invites readers to rest in the ever-present awareness beyond body, mind, and thought, and to live fully and freely in everyday life.
@@ -165,7 +165,7 @@ By gently observing, you begin to see: the body is a vessel of experience, not t
 
 As you have seen, both the body and the mind are objects of experience—they appear, change, and eventually fade. Yet there is a constant presence that observes all of this.
 
-This presence is called the witnessing self, or Sākṣin in Sanskrit.
+This presence is called the witnessing self.
 
 It is not an object. It cannot be seen, touched, or measured. It does not think, it does not act—it simply knows. It is the silent, steady awareness in which all experiences unfold.
 
@@ -257,7 +257,7 @@ Think of it like this: a rope lying on the ground may, at first glance, appear t
 
 Similarly, Maya is the projection of the one unchanging reality—Brahman—as the multiplicity of forms, thoughts, and experiences. It is not nothingness; it is appearance, and its power lies in convincing the mind that appearances are ultimately real.
 
-Why does Maya exist? It exists because the awareness (Brahman) is reflected in ignorance (Avidyā). The world, the body, the mind—all are real in experience, but their reality is relative, not absolute. They are seen, but they are not the ultimate truth.
+Why does Maya exist? It exists because the awareness (Brahman) is reflected in ignorance (Avidya). The world, the body, the mind—all are real in experience, but their reality is relative, not absolute. They are seen, but they are not the ultimate truth.
 
 Understanding Maya does not require you to reject life. It asks you to see through the illusion gently, to recognize the distinction between what appears and the reality in which it appears.
 
@@ -381,7 +381,7 @@ Advaita answers: it is limitless, timeless, and beyond all dualities.
 
 This chapter invites you to experience these qualities directly, gently and without strain.
 
-## PART 2/7 — The Self Beyond Body and Mind
+## PART 2 — The Self Beyond Body and Mind
 
 You have seen that both the body and mind are experienced—they rise and fall, appear and vanish. Yet awareness, the witnessing self, remains unchanged.
 
