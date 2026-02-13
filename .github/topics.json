@@ -1,0 +1,48 @@
+{
+  "published": [
+    "async-and-sync-behavior-of-code",
+    "composition-in-react",
+    "generators-in-js",
+    "mongodb-basics",
+    "naming-is-hard",
+    "must-know-concepts-to-master-javascript",
+    "setup-dockerized-development",
+    "error-handling-in-javascript",
+    "audit-the-npm-dependencies",
+    "authentication-workflow-using-access-token-and-refresh-token",
+    "docker-containers-in-same-network",
+    "generate-change-logs-from-conventional-commits",
+    "generic-higher-order-component-in-react-using-typescript",
+    "must-prefer-union-of-interfaces-to-interface-of-unions",
+    "popular-blogs",
+    "publish-ts-package-to-npm",
+    "setup-express-with-typescript-eslint-prettier-and-husky",
+    "types-that-always-represent-valid-states",
+    "generate-filter-input-for-prisma",
+    "permission-based-authorization-in-graphql-using-graphql-rp-directive",
+    "design-principles",
+    "projects"
+  ],
+  "topics": [
+    {
+      "title": "Advanced TypeScript Patterns",
+      "description": "Deep dive into advanced TypeScript features and patterns for scalable applications."
+    },
+    {
+      "title": "Optimizing React Performance",
+      "description": "Best practices and tools for profiling and optimizing React apps."
+    },
+    {
+      "title": "Modern DevOps with GitHub Actions",
+      "description": "How to automate CI/CD pipelines using GitHub Actions for modern web projects."
+    },
+    {
+      "title": "Effective Error Handling in Node.js",
+      "description": "Strategies for robust error handling and logging in Node.js production systems."
+    },
+    {
+      "title": "Scaling Astro Sites",
+      "description": "Techniques for scaling Astro static sites and optimizing build performance."
+    }
+  ]
+}

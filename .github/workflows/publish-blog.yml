@@ -1,0 +1,39 @@
+name: Publish Blog Twice Daily
+
+on:
+  schedule:
+    - cron: '0 9,18 * * *' # 9 AM and 6 PM UTC
+  workflow_dispatch:
+
+jobs:
+  generate-and-publish-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Generate blog post
+        run: node .github/scripts/generate-blog.js
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+
+      - name: Commit and push new blog post
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add src/pages/blog/**/*.md
+          git commit -m "chore: publish new blog post"
+          git push
+        continue-on-error: true
+
+      - name: Trigger deployment
+        run: pnpm build
+        continue-on-error: true
